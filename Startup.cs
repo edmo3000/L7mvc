@@ -25,10 +25,11 @@ namespace ContosoUniversity
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //tinfo200:[2021-03-11-edmo3000-dykstra2] - Registers "SchoolContext" as a serivce
             services.AddDbContext<SchoolContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            //add comment
+            //tinfo200:[2021-03-11-edmo3000-dykstra2] - Captures database excpetions and gives possible actions to resolve
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddControllersWithViews();

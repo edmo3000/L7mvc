@@ -6,8 +6,10 @@ namespace ContosoUniversity.Data
 {
     public static class DbInitializer
     {
+        //tinfo200:[2021-03-11-edmo3000-dykstra2] - This method populates the database with test data
         public static void Initialize(SchoolContext context)
         {
+            //tinfo200:[2021-03-11-edmo3000-dykstra2] -  Database is automatically createed by using "EnsureCreated"
             context.Database.EnsureCreated();
 
             // Look for any students.

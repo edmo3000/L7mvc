@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Contoso U.</title>
+    //tinfo200:[2021-03-11-edmo3000-dykstra2] - Change title to Contoso U. for readability
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
@@ -12,15 +13,18 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Contoso U.</a>
+                //tinfo200:[2021-03-11-edmo3000-dykstra2] - Change text to Contoso U. for readability
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        //tinfo200:[2021-03-11-edmo3000-dykstra2] - Delete "Home" button on main navigation menu for functionality
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        //tinfo200:[2021-03-11-edmo3000-dykstra2] - Add menu items for "About", "Index", "Courses", "Instructors", and "Departments"
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
                         </li>
@@ -50,6 +54,7 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; @DateTime.Now - Contoso U. - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            //tinfo200:[2021-03-11-edmo3000-dykstra2] - Change text to Contoso U. for readability
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

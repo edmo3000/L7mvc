@@ -13,6 +13,7 @@ namespace ContosoUniversity
 {
     public class Program
     {
+        //tinfo200:[2021-03-11-edmo3000-dykstra2] - Checks if database is found, if yes then do nohting, if no then create and add test data
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
@@ -22,6 +23,7 @@ namespace ContosoUniversity
             host.Run();
         }
 
+        //tinfo200:[2021-03-11-edmo3000-dykstra2] - On startup this method gets the database instance context and calls "Initialize" and discards the context after its completed
         private static void CreateDbIfNotExists(IHost host)
         {
             using (var scope = host.Services.CreateScope())
